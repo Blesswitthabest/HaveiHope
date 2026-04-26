@@ -3,107 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | HaveiHope</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>HaveiHope | About Us</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="logo">HaveiHope</div>
 
-    <button class="menu-btn" id="menuBtn">Menu</button>
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="images/logo-primary.png" alt="HaveiHope logo">
+  </a>
 
-    <nav class="navbar" id="navMenu">
-     <a href="index.html">About Us</a>
-      <a href="programs.html">What We Do</a>
-      <a href="donate.html">Donate</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+  <button class="menu-button" id="menuButton">☰</button>
 
-  <main>
-    <section class="hero">
-      <img src="images/hero-barn.jpg" alt="HaveiHope farm barn entrance">
-      <div class="hero-overlay"></div>
+  <nav class="navbar" id="navbar">
+    <a href="index.html">About Us</a>
+    <a href="programs.html">What We Do</a>
+    <a href="donate.html">Donate</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
 
-      <div class="hero-text">
-        <p class="eyebrow">Rooted in Care. Rising in Purpose.</p>
-        <h1>Growing Hope Through Farm, Faith, and Community</h1>
-        <p>
-          HaveiHope creates relationship-centered programs that help children grow through
-          literacy, hands-on learning, community service, and mentorship.
-        </p>
+<main>
+  <section class="home-hero">
+    <img src="images/youth-garden-team.jpg" alt="Youth and adults learning together in a garden">
+    <div class="hero-shade"></div>
 
-        <div class="hero-buttons">
-          <a href="programs.html" class="btn-primary">Explore Programs</a>
-          <a href="donate.html" class="btn-secondary">Support the Mission</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <div class="section-heading">
-        <p class="eyebrow dark">About Us</p>
-        <h2>Environments that Empower</h2>
-      </div>
-
-      <div class="two-column">
-        <div>
-          <p>
-            HaveiHope is a nonprofit concept focused on creating safe, nurturing, and practical
-            learning environments for under-resourced children. The goal is to support the whole
-            child through education, mentorship, agriculture, stewardship, and service.
-          </p>
-
-          <p>
-            Our work is built around helping children feel known, supported, and equipped to grow
-            into confident, compassionate, and capable individuals.
-          </p>
-        </div>
-
-        <img src="images/youth-garden-team.jpg" alt="Youth planting in a garden bed with adult support">
-      </div>
-    </section>
-
-    <section class="cards-section">
-      <div class="section-heading">
-        <p class="eyebrow dark">Our Values</p>
-        <h2>What Guides Our Work</h2>
-      </div>
-
-      <div class="card-grid">
-        <article class="info-card">
-          <h3>Belonging</h3>
-          <p>Children are met with dignity, care, and patience.</p>
-        </article>
-
-        <article class="info-card">
-          <h3>Whole-Child Growth</h3>
-          <p>We support emotional, academic, physical, and spiritual development.</p>
-        </article>
-
-        <article class="info-card">
-          <h3>Community Stewardship</h3>
-          <p>Children learn responsibility through service and shared investment.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="quote-section">
-      <h2>“Cultivating Hope. Shaping Futures.”</h2>
+    <div class="hero-content">
+      <p class="eyebrow">Cultivating Hope. Shaping Futures.</p>
+      <h1>Environments where children are known, nurtured, and equipped to grow.</h1>
       <p>
-        Through farm-based learning and mentorship, HaveiHope helps children build confidence,
-        responsibility, and purpose.
+        HaveiHope creates relationship-centered programs through literacy,
+        experiential learning, community service, and faith-based mentorship.
       </p>
-    </section>
-  </main>
+      <div class="button-row">
+        <a class="main-button" href="programs.html">Explore Our Programs</a>
+        <a class="light-button" href="donate.html">Support the Mission</a>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>HaveiHope | Created for Final Project</p>
-  </footer>
+  <section class="section purpose-section">
+    <div>
+      <p class="eyebrow">Our Purpose</p>
+      <h2>Helping children grow with care, consistency, and purpose.</h2>
+    </div>
 
-  <script src="script.js"></script>
+    <div>
+      <p>
+        HaveiHope exists to cultivate environments where children are known,
+        nurtured, and equipped to grow into thoughtful, confident, and
+        compassionate individuals.
+      </p>
+      <p>
+        Our work supports under-resourced children through hands-on learning,
+        farm-based experiences, mentorship, literacy, and community care.
+      </p>
+    </div>
+  </section>
+
+  <section class="section image-text">
+    <img src="images/field-walking.jpg" alt="People walking through a farm field">
+
+    <div>
+      <p class="eyebrow">What Changes</p>
+      <h2>Children are partners in their growth, not recipients of charity.</h2>
+      <p>
+        Our programs focus on belonging, whole-child development, consistency,
+        stewardship, faith in practice, and empowerment.
+      </p>
+      <a class="main-button" href="programs.html">See What We Do</a>
+    </div>
+  </section>
+
+  <section class="section black-section">
+    <p class="eyebrow">Core Programs</p>
+    <h2>Three pathways. One mission.</h2>
+
+    <div class="program-preview-grid">
+      <article>
+        <img src="images/icon-hope-word.png" alt="Hope Word icon">
+        <h3>Hope Word</h3>
+        <p>Literacy, reading confidence, writing, communication, and leadership.</p>
+      </article>
+
+      <article>
+        <img src="images/icon-hope-harvest.png" alt="Hope Harvest icon">
+        <h3>Hope Harvest</h3>
+        <p>Gardening, STEM learning, harvesting, food preparation, and service.</p>
+      </article>
+
+      <article>
+        <img src="images/icon-hope-stewardship.png" alt="Hope Stewardship icon">
+        <h3>Hope Stewardship</h3>
+        <p>Animal care, carpentry, farm stewardship, responsibility, and compassion.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section image-text reverse">
+    <img src="images/mentorship-child.jpg" alt="Adult helping a child during a learning activity">
+
+    <div>
+      <p class="eyebrow">Meet the Heart</p>
+      <h2>Built on relationship, service, and trust.</h2>
+      <p>
+        HaveiHope is shaped by people who believe children need safe,
+        life-giving environments where they can learn practical skills,
+        build confidence, and experience care.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>HaveiHope © 2026 | Rooted in Care. Rising in Purpose.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
