@@ -4,116 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donate | HaveiHope</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="logo">HaveiHope</div>
 
-    <button class="menu-btn" id="menuBtn">Menu</button>
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="images/logo-primary.png" alt="HaveiHope logo">
+  </a>
 
-    <nav class="navbar" id="navMenu">
-     <a href="index.html">About Us</a>
-      <a href="programs.html">What We Do</a>
-      <a href="donate.html">Donate</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+  <button class="menu-button" id="menuButton">☰</button>
 
-  <main>
-    <section class="donate-hero">
-      <div>
-        <p class="eyebrow dark">Donate</p>
-        <h1>Give Toward Hope</h1>
-        <p>
-          Support a specific cause, sponsor a child, or give toward farm and learning resources.
-        </p>
-      </div>
+  <nav class="navbar" id="navbar">
+    <a href="index.html">About Us</a>
+    <a href="programs.html">What We Do</a>
+    <a href="donate.html">Donate</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
 
-      <img src="images/produce-boxes.jpg" alt="Boxes of harvested produce">
-    </section>
+<main>
+  <section class="page-hero donate-hero">
+    <p class="eyebrow">Donate</p>
+    <h1>Give toward a cause, a program, or a child’s growth journey.</h1>
+    <p>
+      This page shows the intended donor experience for the final project:
+      member login, cause-based giving, and child sponsorship options.
+    </p>
+  </section>
 
-    <section class="login-section">
-      <div class="login-card">
-        <h2>Member Login</h2>
-        <p>
-          Log in to manage donations, sponsor a child, or give toward a specific program.
-        </p>
+  <section class="section donate-grid">
+    <div class="member-card">
+      <h2>Member Login</h2>
+      <p>Log in to manage donations, sponsor a child, or give toward a specific program.</p>
 
-        <form id="loginForm">
-          <label for="loginEmail">Email</label>
-          <input id="loginEmail" type="email" placeholder="Enter your email">
+      <form id="loginForm">
+        <label for="loginEmail">Email</label>
+        <input id="loginEmail" type="email" required>
 
-          <label for="loginPassword">Password</label>
-          <input id="loginPassword" type="password" placeholder="Enter your password">
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" type="password" required>
 
-          <button type="submit" class="btn-primary form-btn">Log In</button>
-        </form>
+        <button class="dark-button" type="submit">Log In</button>
+      </form>
 
-        <p class="small-note">New donor? Create an account to begin giving.</p>
-      </div>
+      <p id="loginMessage" class="form-message"></p>
+    </div>
 
-      <div class="donation-panel">
-        <h2>Choose How to Give</h2>
+    <div class="give-options">
+      <h2>Ways to Give</h2>
 
-        <div class="donation-buttons">
-          <button class="donation-option active" data-donation="cause">Give to a Cause</button>
-          <button class="donation-option" data-donation="child">Sponsor a Child</button>
-          <button class="donation-option" data-donation="farm">Support Farm Needs</button>
-        </div>
+      <article>
+        <h3>Give to a Cause</h3>
+        <p>Support Hope Word, Hope Harvest, Hope Stewardship, or general farm needs.</p>
+        <button class="gold-button donation-button">Choose Cause</button>
+      </article>
 
-        <div id="donationText" class="donation-text">
-          <h3>Give to a Cause</h3>
-          <p>
-            Support programs like Hope Harvest, Hope Stewardship, and Hope Word.
-          </p>
-        </div>
+      <article>
+        <h3>Sponsor a Child</h3>
+        <p>Support mentorship, meals, reading support, transportation, and learning materials.</p>
+        <button class="gold-button donation-button">Sponsor Child</button>
+      </article>
 
-        <form class="donation-form">
-          <label for="amount">Donation Amount</label>
-          <select id="amount">
-            <option>$25</option>
-            <option>$50</option>
-            <option>$100</option>
-            <option>$250</option>
-            <option>Custom Amount</option>
-          </select>
+      <article>
+        <h3>Support Farm Needs</h3>
+        <p>Contribute toward seeds, tools, animal care, eggs, garden supplies, and program materials.</p>
+        <button class="gold-button donation-button">Support Supplies</button>
+      </article>
 
-          <button type="button" class="btn-primary form-btn">Continue to Donate</button>
-        </form>
-      </div>
-    </section>
+      <p id="donationMessage" class="form-message"></p>
+    </div>
+  </section>
 
-    <section class="cards-section">
-      <div class="card-grid">
-        <article class="info-card">
-          <img src="images/eggs-cartons.jpg" alt="Farm fresh egg cartons">
-          <h3>Farm Resources</h3>
-          <p>Help provide seeds, soil, feed, tools, and learning supplies.</p>
-        </article>
+  <section class="section image-text">
+    <img src="images/eggs-cartons.jpg" alt="Farm fresh egg cartons">
 
-        <article class="info-card">
-          <img src="images/child-planting.jpg" alt="Child helping in garden">
-          <h3>Child Sponsorship</h3>
-          <p>Help support learning, mentorship, transportation, meals, and activities.</p>
-        </article>
+    <div>
+      <p class="eyebrow">Transparency</p>
+      <h2>Where does the money go?</h2>
+      <p>
+        Gifts help fund the practical resources behind the mission: learning
+        materials, garden supplies, animal care, food support, transportation,
+        volunteer resources, and safe program spaces.
+      </p>
+    </div>
+  </section>
+</main>
 
-        <article class="info-card">
-          <img src="images/compost-system.jpg" alt="Compost system on farm">
-          <h3>Sustainability</h3>
-          <p>Support composting, gardening, greenhouse care, and farm improvements.</p>
-        </article>
-      </div>
-    </section>
-  </main>
+<footer>
+  <p>HaveiHope © 2026 | Rooted in Care. Rising in Purpose.</p>
+</footer>
 
-  <footer>
-    <p>HaveiHope | Donate</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
