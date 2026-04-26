@@ -4,69 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events | HaveiHope</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="logo">HaveiHope</div>
 
-    <button class="menu-btn" id="menuBtn">Menu</button>
+<header class="site-header">
+  <div class="logo">HaveiHope</div>
+  <button class="menu-button" id="menuButton">☰</button>
+  <nav class="navbar" id="navbar">
+    <a href="index.html">About Us</a>
+    <a href="programs.html">What We Do</a>
+    <a href="donate.html">Donate</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
 
-    <nav class="navbar" id="navMenu">
-      <a href="about.html">About Us</a>
-      <a href="programs.html">What We Do</a>
-      <a href="donate.html">Donate</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+<main>
+  <section class="event-hero">
+    <img src="images/volunteer-loading.jpg" alt="Volunteer loading food boxes for community support">
+    <div>
+      <p class="eyebrow">Events</p>
+      <h1>Join us for volunteer days, garden work, and community events.</h1>
+      <p>Use the calendar to view upcoming HaveiHope events and program days.</p>
+    </div>
+  </section>
 
-  <main>
-    <section class="events-hero">
-      <img src="images/volunteer-loading.jpg" alt="Volunteer loading boxes">
-      <div>
-        <p class="eyebrow dark">Events</p>
-        <h1>Upcoming Events and Volunteer Days</h1>
-        <p>
-          View community events, garden days, learning sessions, and volunteer opportunities.
-        </p>
-      </div>
-    </section>
+  <section class="section calendar-section">
+    <div class="calendar-header">
+      <button id="prevMonth" class="secondary-button">Previous</button>
+      <h2 id="monthYear">Calendar</h2>
+      <button id="nextMonth" class="secondary-button">Next</button>
+    </div>
 
-    <section class="calendar-section">
-      <div class="calendar-header">
-        <button id="prevMonth">Previous</button>
-        <h2 id="monthYear">Month Year</h2>
-        <button id="nextMonth">Next</button>
-      </div>
+    <div class="weekday-row">
+      <span>Sun</span>
+      <span>Mon</span>
+      <span>Tue</span>
+      <span>Wed</span>
+      <span>Thu</span>
+      <span>Fri</span>
+      <span>Sat</span>
+    </div>
 
-      <div class="weekday-grid">
-        <p>Sun</p>
-        <p>Mon</p>
-        <p>Tue</p>
-        <p>Wed</p>
-        <p>Thu</p>
-        <p>Fri</p>
-        <p>Sat</p>
-      </div>
+    <div class="calendar-grid" id="calendar"></div>
+  </section>
 
-      <div class="calendar-grid" id="calendar"></div>
-    </section>
+  <section class="section card-grid">
+    <article class="card">
+      <h3>Volunteer Garden Day</h3>
+      <p>Help plant, weed, water, and prepare garden rows for youth learning activities.</p>
+    </article>
 
-    <section class="cards-section">
-      <div class="section-heading">
-        <p class="eyebrow dark">Featured Opportunities</p>
-        <h2>Ways to Show Up</h2>
-      </div>
+    <article class="card">
+      <h3>Hope Harvest Workshop</h3>
+      <p>Children learn about food, stewardship, and how to serve their community through gardening.</p>
+    </article>
 
-      <div class="card-grid">
-        <article class="info-card">
-          <img src="images/planting-rows.jpg" alt="Prepared garden rows">
-          <h3>Garden Volunteer Day</h3>
-          <p>Help plant, water, harvest, and prepare garden areas for youth learning.</p>
-        </article>
+    <article class="card">
+      <h3>Community Support Day</h3>
+      <p>Volunteers help organize food, supplies, and program materials for families and children.</p>
+    </article>
+  </section>
+</main>
 
-        <article class="info-card">
-          <img src="images/horse-care.jpg" alt="Horse
+<footer>
+  <p>HaveiHope © 2026 | Rooted in Care. Rising in Purpose.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
