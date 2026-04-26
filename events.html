@@ -9,8 +9,12 @@
 <body>
 
 <header class="site-header">
-  <div class="logo">HaveiHope</div>
+  <a class="logo" href="index.html">
+    <img src="images/logo-primary.png" alt="HaveiHope logo">
+  </a>
+
   <button class="menu-button" id="menuButton">☰</button>
+
   <nav class="navbar" id="navbar">
     <a href="index.html">About Us</a>
     <a href="programs.html">What We Do</a>
@@ -21,20 +25,20 @@
 </header>
 
 <main>
-  <section class="event-hero">
-    <img src="images/volunteer-loading.jpg" alt="Volunteer loading food boxes for community support">
+  <section class="events-top">
+    <img src="images/volunteer-loading.jpg" alt="Volunteer loading donation boxes">
     <div>
       <p class="eyebrow">Events</p>
-      <h1>Join us for volunteer days, garden work, and community events.</h1>
-      <p>Use the calendar to view upcoming HaveiHope events and program days.</p>
+      <h1>Join us for volunteer days, garden work, learning events, and community support.</h1>
+      <p>Use the calendar below to view upcoming HaveiHope events.</p>
     </div>
   </section>
 
-  <section class="section calendar-section">
+  <section class="calendar-section">
     <div class="calendar-header">
-      <button id="prevMonth" class="secondary-button">Previous</button>
+      <button id="prevMonth" class="calendar-button">Previous</button>
       <h2 id="monthYear">Calendar</h2>
-      <button id="nextMonth" class="secondary-button">Next</button>
+      <button id="nextMonth" class="calendar-button">Next</button>
     </div>
 
     <div class="weekday-row">
@@ -50,21 +54,29 @@
     <div class="calendar-grid" id="calendar"></div>
   </section>
 
-  <section class="section card-grid">
-    <article class="card">
-      <h3>Volunteer Garden Day</h3>
-      <p>Help plant, weed, water, and prepare garden rows for youth learning activities.</p>
-    </article>
+  <section class="section">
+    <p class="eyebrow center">Upcoming Opportunities</p>
+    <h2 class="center">Ways to participate</h2>
 
-    <article class="card">
-      <h3>Hope Harvest Workshop</h3>
-      <p>Children learn about food, stewardship, and how to serve their community through gardening.</p>
-    </article>
+    <div class="program-preview-grid">
+      <article class="program-preview">
+        <img src="images/child-planting.jpg" alt="Child planting in garden">
+        <h3>Volunteer Garden Day</h3>
+        <p>Help plant, weed, water, and prepare rows for youth learning.</p>
+      </article>
 
-    <article class="card">
-      <h3>Community Support Day</h3>
-      <p>Volunteers help organize food, supplies, and program materials for families and children.</p>
-    </article>
+      <article class="program-preview">
+        <img src="images/compost-system.jpg" alt="Farm compost system">
+        <h3>Farm Stewardship Day</h3>
+        <p>Support composting, cleanup, animal care, and land stewardship.</p>
+      </article>
+
+      <article class="program-preview">
+        <img src="images/produce-boxes.jpg" alt="Boxes of produce">
+        <h3>Community Support Day</h3>
+        <p>Help organize food, supplies, and support materials for families.</p>
+      </article>
+    </div>
   </section>
 </main>
 
