@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | HaveiHope</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo">HaveiHope</div>
+
+    <button class="menu-btn" id="menuBtn">Menu</button>
+
+    <nav class="navbar" id="navMenu">
+      <a href="about.html">About Us</a>
+      <a href="programs.html">What We Do</a>
+      <a href="donate.html">Donate</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="donate-hero">
+      <div>
+        <p class="eyebrow dark">Donate</p>
+        <h1>Give Toward Hope</h1>
+        <p>
+          Support a specific cause, sponsor a child, or give toward farm and learning resources.
+        </p>
+      </div>
+
+      <img src="images/produce-boxes.jpg" alt="Boxes of harvested produce">
+    </section>
+
+    <section class="login-section">
+      <div class="login-card">
+        <h2>Member Login</h2>
+        <p>
+          Log in to manage donations, sponsor a child, or give toward a specific program.
+        </p>
+
+        <form id="loginForm">
+          <label for="loginEmail">Email</label>
+          <input id="loginEmail" type="email" placeholder="Enter your email">
+
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" type="password" placeholder="Enter your password">
+
+          <button type="submit" class="btn-primary form-btn">Log In</button>
+        </form>
+
+        <p class="small-note">New donor? Create an account to begin giving.</p>
+      </div>
+
+      <div class="donation-panel">
+        <h2>Choose How to Give</h2>
+
+        <div class="donation-buttons">
+          <button class="donation-option active" data-donation="cause">Give to a Cause</button>
+          <button class="donation-option" data-donation="child">Sponsor a Child</button>
+          <button class="donation-option" data-donation="farm">Support Farm Needs</button>
+        </div>
+
+        <div id="donationText" class="donation-text">
+          <h3>Give to a Cause</h3>
+          <p>
+            Support programs like Hope Harvest, Hope Stewardship, and Hope Word.
+          </p>
+        </div>
+
+        <form class="donation-form">
+          <label for="amount">Donation Amount</label>
+          <select id="amount">
+            <option>$25</option>
+            <option>$50</option>
+            <option>$100</option>
+            <option>$250</option>
+            <option>Custom Amount</option>
+          </select>
+
+          <button type="button" class="btn-primary form-btn">Continue to Donate</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <div class="card-grid">
+        <article class="info-card">
+          <img src="images/eggs-cartons.jpg" alt="Farm fresh egg cartons">
+          <h3>Farm Resources</h3>
+          <p>Help provide seeds, soil, feed, tools, and learning supplies.</p>
+        </article>
+
+        <article class="info-card">
+          <img src="images/child-planting.jpg" alt="Child helping in garden">
+          <h3>Child Sponsorship</h3>
+          <p>Help support learning, mentorship, transportation, meals, and activities.</p>
+        </article>
+
+        <article class="info-card">
+          <img src="images/compost-system.jpg" alt="Compost system on farm">
+          <h3>Sustainability</h3>
+          <p>Support composting, gardening, greenhouse care, and farm improvements.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>HaveiHope | Donate</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
