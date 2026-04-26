@@ -1,4 +1,4 @@
-// Mobile menu
+// mobile menu
 const menuButton = document.getElementById("menuButton");
 const navbar = document.getElementById("navbar");
 
@@ -8,7 +8,7 @@ if (menuButton && navbar) {
   });
 }
 
-// Contact form message
+// contact form demo
 const contactForm = document.getElementById("contactForm");
 const contactMessage = document.getElementById("contactMessage");
 
@@ -20,7 +20,7 @@ if (contactForm) {
   });
 }
 
-// Login form message
+// member login demo
 const loginForm = document.getElementById("loginForm");
 const loginMessage = document.getElementById("loginMessage");
 
@@ -32,7 +32,7 @@ if (loginForm) {
   });
 }
 
-// Donation buttons
+// donation option demo
 const donationButtons = document.querySelectorAll(".donation-button");
 const donationMessage = document.getElementById("donationMessage");
 
@@ -42,7 +42,7 @@ donationButtons.forEach(function (button) {
   });
 });
 
-// Active calendar
+// simple active calendar
 const calendar = document.getElementById("calendar");
 const monthYear = document.getElementById("monthYear");
 const prevMonth = document.getElementById("prevMonth");
@@ -67,7 +67,6 @@ function buildCalendar() {
 
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
-
   const firstDay = new Date(year, month, 1).getDay();
   const lastDate = new Date(year, month + 1, 0).getDate();
 
