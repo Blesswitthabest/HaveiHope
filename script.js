@@ -105,7 +105,4 @@ if (prevMonth && nextMonth) {
 }
 
 buildCalendar();
-AOS.init({
-  duration: 800,
-  once: true
-});
+
