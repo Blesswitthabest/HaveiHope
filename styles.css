@@ -324,6 +324,11 @@ textarea {
   background: #000;
   color: #fff;
 }
+.donate-title {
+  font-size: 20px;
+  color: #e9b800;
+  text-align: center;
+}
 
 /* EVENTS PAGE */
 
