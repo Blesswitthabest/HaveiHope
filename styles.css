@@ -569,3 +569,33 @@ footer p {
     flex-direction: column;
   }
 }
+/* BUTTON BOUNCE ANIMATION */
+
+@keyframes buttonBounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* APPLY TO ALL BUTTONS */
+
+button,
+.gold-button,
+.dark-button,
+.main-button,
+.light-button {
+  transition: transform 0.2s ease;
+}
+
+button:hover,
+.gold-button:hover,
+.dark-button:hover,
+.main-button:hover,
+.light-button:hover {
+  animation: buttonBounce 1s infinite;
+}
